@@ -5,57 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="tiktok-developers-site-verification" content="M9mWxUIWVwj1w5eygO3ureA99Y9HzESJ" />
   <title>AInomics Japan — 金融・経済ニュース解説ショート動画</title>
+  <meta name="description" content="AInomics Japanは、AIを活用して金融・経済ニュースを日本語で分かりやすく解説するショート動画を企画・生成し、YouTube ShortsおよびTikTokに配信するコンテンツパブリッシングサービスです。" />
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { font-size: 1.8em; border-bottom: 2px solid #e00; padding-bottom: 8px; }
-    h2 { font-size: 1.2em; margin-top: 2em; color: #555; }
-    p, li { font-size: 0.95em; }
-    .updated { color: #888; font-size: 0.85em; }
-    a { color: #e00; }
-    .links a { display: inline-block; margin-right: 16px; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, "Hiragino Sans", sans-serif; margin: 0; color: #222; line-height: 1.7; background: #fff; }
+    header.site { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #eee; z-index: 10; }
+    nav { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+    nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05em; }
+    nav .brand img { width: 32px; height: 32px; border-radius: 50%; }
+    nav .navlinks a { color: #333; text-decoration: none; margin-left: 22px; font-size: 0.92em; }
+    nav .navlinks a:hover { color: #e00; }
+    main { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 48px 0; border-bottom: 1px solid #f2f2f2; }
+    section:last-of-type { border-bottom: none; }
+    .hero { padding-top: 56px; text-align: left; }
+    .hero img { width: 96px; height: 96px; border-radius: 50%; margin-bottom: 20px; }
+    h1 { font-size: 2em; margin: 0 0 12px; }
+    h2 { font-size: 1.3em; color: #222; margin-top: 0; }
+    .tagline { font-size: 1.05em; color: #555; }
+    p, li { font-size: 0.97em; color: #333; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .card { background: #fafafa; border: 1px solid #eee; border-radius: 10px; padding: 16px 18px; }
+    .card h3 { margin: 0 0 6px; font-size: 0.98em; }
+    .card p { margin: 0; font-size: 0.88em; color: #666; }
+    .steps { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .step { display: flex; gap: 14px; align-items: flex-start; }
+    .step .num { flex: 0 0 28px; height: 28px; border-radius: 50%; background: #e00; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.85em; font-weight: 700; }
+    .platforms a { display: inline-block; margin-right: 16px; padding: 10px 18px; border: 1px solid #ddd; border-radius: 8px; color: #222; text-decoration: none; font-size: 0.92em; }
+    .platforms a:hover { border-color: #e00; color: #e00; }
+    .disclaimer { font-size: 0.85em; color: #888; background: #fafafa; border-radius: 8px; padding: 12px 16px; margin-top: 16px; }
+    footer.site { max-width: 960px; margin: 0 auto; padding: 32px 20px 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.85em; color: #888; }
+    footer.site a { color: #888; margin-right: 16px; }
+    footer.site a:hover { color: #e00; }
   </style>
 </head>
 <body>
 
-<img src="./ainomics_logo.png" alt="AInomics Japan" style="width:120px; height:120px; display:block; margin-bottom:16px;" />
-<h1>AInomics Japan</h1>
-<p>
-  AInomics Japan は、金融・経済ニュースを日本語でわかりやすく解説するショート動画を、
-  YouTube Shorts および TikTok に配信している個人運営のコンテンツプロジェクトです。
-</p>
+<header class="site">
+  <nav>
+    <div class="brand"><img src="./ainomics_logo.png" alt="AInomics Japan" />AInomics Japan</div>
+    <div class="navlinks">
+      <a href="#about">サービスについて</a>
+      <a href="#how">仕組み</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="./privacy_policy.html">プライバシーポリシー</a>
+      <a href="./terms.html">利用規約</a>
+    </div>
+  </nav>
+</header>
 
-<h2>サービス内容</h2>
-<ul>
-  <li>米国・日本の市況ニュースの速報解説</li>
-  <li>注目企業・スタートアップの紹介</li>
-  <li>AIと経済をテーマにした解説コンテンツ</li>
-  <li>AIツールの実践的な活用方法の解説</li>
-</ul>
-<p>
-  すべてのコンテンツは情報提供・教育目的であり、投資助言には該当しません。
-  投資判断はご自身の責任において行ってください。
-</p>
+<main>
 
-<h2>配信プラットフォーム</h2>
-<p class="links">
-  <a href="https://www.youtube.com/@ainomicsjapan" target="_blank">YouTube</a>
-  <a href="https://www.tiktok.com/@ainomicsjapan" target="_blank">TikTok</a>
-</p>
+  <section class="hero">
+    <h1>AInomics Japan</h1>
+    <p class="tagline">金融・経済ニュースを日本語でわかりやすく解説するショート動画を、AIを活用して制作・配信するコンテンツパブリッシングサービスです。</p>
+  </section>
 
-<h2>運営者情報</h2>
-<p>
-  本サービスは個人により運営されています。<br />
-  お問い合わせ: <a href="mailto:hsugawara19730425@gmail.com">hsugawara19730425@gmail.com</a>
-</p>
+  <section id="about">
+    <h2>サービスについて</h2>
+    <p>
+      AInomics Japanは、米国・日本の市況ニュースやテクノロジー企業の動向を、最新の情報を基に
+      日本語の短尺動画として継続的に企画・生成し、YouTube ShortsおよびTikTokに配信するコンテンツ
+      パブリッシングの仕組みです。配信内容は速報解説・企業紹介・AIと経済をテーマにした解説など、
+      複数のフォーマットで構成されています。
+    </p>
+    <div class="grid">
+      <div class="card"><h3>市況ニュース解説</h3><p>米国・日本の株式市場の動きを、背景にある経済的な矛盾や逆説を交えて解説</p></div>
+      <div class="card"><h3>企業スポットライト</h3><p>上場前の注目スタートアップを、資金調達・技術内容とともに紹介</p></div>
+      <div class="card"><h3>モーニングブリーフ</h3><p>前日の市場の終値・主要指標を朝にまとめて配信</p></div>
+      <div class="card"><h3>AI×経済</h3><p>AIが経済・産業に与える影響をテーマにした解説コンテンツ</p></div>
+    </div>
+    <p class="disclaimer">すべてのコンテンツは情報提供・教育目的であり、投資助言には該当しません。投資判断はご自身の責任において行ってください。</p>
+  </section>
 
-<h2>関連ページ</h2>
-<p class="links">
-  <a href="./privacy_policy.html">プライバシーポリシー</a>
-  <a href="./terms.html">利用規約</a>
-</p>
+  <section id="how">
+    <h2>仕組み</h2>
+    <p>配信される動画は、以下のプロセスを経て継続的に制作・公開されています。</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div>公開されているニュース・市場データを収集し、配信テーマを選定します。</div></div>
+      <div class="step"><div class="num">2</div><div>収集した情報のみを基に、日本語の解説台本を生成します。</div></div>
+      <div class="step"><div class="num">3</div><div>台本の事実関係・表現を複数の工程でチェックした上で、音声・字幕付きの動画を生成します。</div></div>
+      <div class="step"><div class="num">4</div><div>YouTube Data API および TikTok Content Posting API を通じて、各プラットフォームに配信します。</div></div>
+    </div>
+  </section>
 
-<hr />
-<p class="updated">最終更新日: 2026年6月23日</p>
+  <section class="platforms">
+    <h2>配信プラットフォーム</h2>
+    <a href="https://www.youtube.com/@ainomicsjapan" target="_blank">YouTube で見る</a>
+    <a href="https://www.tiktok.com/@ainomicsjapan" target="_blank">TikTok で見る</a>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>サービスに関するご質問・お問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p><a href="mailto:hsugawara19730425@gmail.com">hsugawara19730425@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div>
+    <a href="./privacy_policy.html">プライバシーポリシー</a>
+    <a href="./terms.html">利用規約</a>
+  </div>
+  <div>最終更新日: 2026年6月26日</div>
+</footer>
 
 </body>
 </html>
